@@ -131,8 +131,6 @@ nav {
 header {
   position: relative;
   width: 100%;
-  height: min-content;
-  overflow: hidden;
 }
 #img-sm {
   width: 100%;
@@ -140,12 +138,18 @@ header {
 #img-lg {
   display: none;
 }
+.header {
+  width: 100vw;
+  height: 150vw;
+  background: url(../assets/Hero-background-sm.png) no-repeat center;
+  background-size: cover;
+}
 .texto-header {
   position: absolute;
   font-size: calc(0.8em + 1vw);
   top: 0;
   color: var(--white-color);
-  width: 290px;
+  width: 80%;
   height: 50%;
   left: 0;
   right: 0;
@@ -166,12 +170,11 @@ header {
   width: 220vw;
   gap: 40px;
   justify-content: center;
-  scrollbar-width: none;
+  cursor: grab;
 }
 .section-cards::-webkit-scrollbar {
   display: none;
 }
-
 .card {
   display: flex;
   text-align: center;
@@ -232,7 +235,7 @@ header {
 }
 .main-text p {
   margin-bottom: 20px;
-  font-size: 13px;
+  font-size: calc(0.7em + 0.5vw);
 }
 
 /* Formulario de contacto */
@@ -324,17 +327,15 @@ footer {
 
 @media (min-width: 768px) {
   /* Header */
-  #img-sm {
-    display: none;
-  }
-  #img-lg {
-    display: initial;
-    width: 100%;
+  .header {
+    height: 30vw;
+    background: url(../assets/Hero-background.jpg) no-repeat center;
+    background-size: contain;
+    background-position: 0 0%;
   }
   .texto-header {
     width: 90%;
   }
-
   /* Cards */
   .contenedor-cards {
     width: 100%;
@@ -385,15 +386,6 @@ footer {
   }
 
   /* Header */
-  header {
-    height: 390px;
-    margin-top: initial;
-  }
-  .contenedor-img-header {
-    background: url(../assets/Hero-background.jpg) no-repeat center;
-    background-position: initial;
-    background-size: contain;
-  }
   .contenedor-text-header {
     width: 350px;
     height: 250px;
@@ -416,6 +408,7 @@ footer {
     width: 539px;
     margin-top: 0;
     align-self: flex-start;
+    font-size: calc(0.6em + 0.5vw);
   }
 
   /* Formulario de contacto oculto */
@@ -483,7 +476,9 @@ footer {
     margin: 0 auto;
     justify-content: space-evenly;
   }
-}
 
-@media (min-width: 1920px) {
+  /* Main */
+  .main-text {
+    font-size: calc(0.4em + 0.5vw);
+  }
 }

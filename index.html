@@ -32,13 +32,13 @@
         <div class="contenedor-ul">
           <div class="btn-cierre-menu"></div>
           <ul>
-            <a href="">
+            <a href="#item-menu-1" class="a-option">
               <li>Item menu 1</li>
             </a>
-            <a href="">
+            <a href="#item-menu-2" class="a-option">
               <li>Item menu 2</li>
             </a>
-            <a href="">
+            <a href="#item-menu-3" class="a-option">
               <li>Item menu 3</li>
             </a>
             <button class="btn-sm">Button text</button>
@@ -52,15 +52,17 @@
 
   <!-- Header -->
   <header>
-    <img id="img-sm" src="./assets/Hero-background-sm.png" alt="imagen de fondo Digifianz" />
-    <img id="img-lg" src="./assets/Hero-background.jpg" alt="imagen de fondo Digifianz" />
-    <div class="texto-header">
-      <h1>Bienvenid@ al test de aptitudes técnicas de Digifianz</h1>
+    <div class="header">
+      <div class="texto-header">
+        <h1>Bienvenid@ al test de aptitudes técnicas de Digifianz</h1>
+      </div>
     </div>
+    <!-- <img id="img-sm" src="./assets/Hero-background-sm.png" alt="imagen de fondo Digifianz" />
+    <img id="img-lg" src="./assets/Hero-background.jpg" alt="imagen de fondo Digifianz" /> -->
   </header>
 
   <!-- Section cards -->
-  <div class="section-cards">
+  <div class="section-cards" id="item-menu-1">
     <div class="contenedor-cards">
       <div class="card">
         <div class="card-img" id="img-card-1"></div>
@@ -84,7 +86,7 @@
   </div>
 
   <!-- Section main -->
-  <div class="contenedor-main">
+  <div class="contenedor-main" id="item-menu-2">
     <div class="contenedor-items-main">
       <div class="img-main"></div>
       <div class="main-text">
@@ -107,7 +109,7 @@
   </div>
 
   <!-- Formulario de contacto -->
-  <div class="contenedor-form">
+  <div class="contenedor-form" id="item-menu-3">
     <p>Formulario</p>
     <form class="form">
       <div class="contenedor-grid-form">
@@ -117,23 +119,23 @@
         </div>
         <div class="item-form">
           <span class="required-star">*</span>
-          <input class="input" type="text" placeholder="Apellido" name="apellido" required />
+          <input type="text" placeholder="Apellido" name="apellido" autocomplete="on" required />
         </div>
         <div class="item-form">
           <span class="required-star">*</span>
-          <input type="text" placeholder="Correo electrónico" name="correo-electronico" required />
+          <input type="email" placeholder="Correo electrónico" name="correo-electronico" autocomplete="on" required />
         </div>
         <div class="item-form">
           <span class="required-star">*</span>
-          <input type="text" placeholder="Nombre de la institución" name="nombre-institucion" required />
+          <input type="text" placeholder="Nombre de la institución" name="nombre-institucion" autocomplete="on" required />
         </div>
         <div class="item-form">
           <span class="required-star">*</span>
-          <input type="text" placeholder="N° de teléfono" name="telefono" required />
+          <input type="number" placeholder="N° de teléfono" name="telefono" autocomplete="on" required />
         </div>
         <div class="item-form">
           <span class="required-star">*</span>
-          <input type="text" placeholder="País" name="pais" required />
+          <input type="text" placeholder="País" name="pais" autocomplete="on" required />
         </div>
       </div>
       <button type="submit">Enviar</button>
@@ -148,27 +150,27 @@
       <div class="contenedor-grid-form">
         <div class="item-form">
           <span class="required-star">*</span>
-          <input type="text" placeholder="Nombre" name="nombre" required />
+          <input type="text" placeholder="Nombre" name="nombre" autocomplete="on" required />
         </div>
         <div class="item-form">
           <span class="required-star">*</span>
-          <input class="input" type="text" placeholder="Apellido" name="apellido" required />
+          <input class="input" type="text" placeholder="Apellido" name="apellido" autocomplete="on" required />
         </div>
         <div class="item-form">
           <span class="required-star">*</span>
-          <input type="text" placeholder="Correo electrónico" name="correo-electronico" required />
+          <input type="email" placeholder="Correo electrónico" name="correo-electronico" autocomplete="on" required />
         </div>
         <div class="item-form">
           <span class="required-star">*</span>
-          <input type="text" placeholder="Nombre de la institución" name="nombre-institucion" required />
+          <input type="text" placeholder="Nombre de la institución" name="nombre-institucion" autocomplete="on" required />
         </div>
         <div class="item-form">
           <span class="required-star">*</span>
-          <input type="text" placeholder="N° de teléfono" name="telefono" required />
+          <input type="number" placeholder="N° de teléfono" name="telefono" autocomplete="on" required />
         </div>
         <div class="item-form">
           <span class="required-star">*</span>
-          <input type="text" placeholder="País" name="pais" required />
+          <input type="text" placeholder="País" name="pais" autocomplete="on" required />
         </div>
       </div>
       <button type="submit">Enviar</button>
