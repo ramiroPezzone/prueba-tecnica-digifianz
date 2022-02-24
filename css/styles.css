@@ -168,7 +168,7 @@ header {
   justify-content: center;
   scrollbar-width: none;
 }
-.contenedor-cards::-webkit-scrollbar {
+.section-cards::-webkit-scrollbar {
   display: none;
 }
 
@@ -237,6 +237,9 @@ header {
 
 /* Formulario de contacto */
 
+.contenedor-form-hidden {
+  display: none;
+}
 .contenedor-form {
   display: flex;
   width: 90%;
@@ -252,6 +255,7 @@ header {
   box-shadow: 0px 0 50px -15px var(--shadow-color);
 }
 .item-form {
+  position: relative;
   width: 100%;
 }
 .contenedor-grid-form {
@@ -276,6 +280,11 @@ header {
 }
 .input::-moz-placeholder::after {
   content: "*";
+  color: red;
+}
+.required-star {
+  position: absolute;
+  right: 0;
   color: red;
 }
 
@@ -410,9 +419,7 @@ footer {
   }
 
   /* Formulario de contacto oculto */
-  .contenedor-form-hidden {
-    display: none;
-  }
+
   .contenedor-form-revealed p {
     color: var(--text-form-color);
     font-size: 20px;
