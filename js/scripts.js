@@ -28,19 +28,21 @@ if (document.querySelector(".menu-hamb")) {
 }
 
 // Form oculto
-if (document.querySelector(".contenedor-form-hidden")) {
+if (document.querySelector(".contenedor-form")) {
   const btnLg = document.querySelector(".btn-lg");
-  const formOculto = document.querySelector(".contenedor-form-hidden");
-  const cruzCierreForm = document.querySelector(".cruz-cierre-form");
+  const form = document.querySelector(".contenedor-form");
+  const cruzCierreForm = document.querySelector(".cruz-cierre-form-hidden");
 
   btnLg.addEventListener("click", () => {
-    formOculto.classList.add("contenedor-form-revealed");
+    form.classList.add("contenedor-form-revealed");
+    cruzCierreForm.classList.add("cruz-cierre-form")
     capaOpaca.classList.add("capa-opaca-revealed");
     todoElDocumento.style.overflowY = "hidden";
   });
-
+  
   cruzCierreForm.addEventListener("click", () => {
-    formOculto.classList.remove("contenedor-form-revealed");
+    form.classList.remove("contenedor-form-revealed");
+    cruzCierreForm.classList.remove("cruz-cierre-form")
     capaOpaca.classList.remove("capa-opaca-revealed");
     todoElDocumento.style.overflowY = "initial";
   });
